@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./header.css" /> -->
+    <title>Header</title>
+    <style>
+      /* CSSはこの中に書いてします */
+      .flexContainer {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        width: 150px;
+      }
+
+      #newArticle, #top, #myPage, #logout{
+        padding-right: 10px;
+        padding-top: auto;
+        padding-bottom: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="flexContainer">
+        <!-- 共通ヘッダー -->
+        <div>
+          <img
+            src="./img/MINDIA_logo-removebg-preview.png"
+            alt="mindia_logo"
+            class="logo"
+          />
+        </div>
+        <div id="title">
+          <h1>MINDIA</h1>
+
+          <h2>みんなでつくる、あたらしいジャーナリズム</h2>
+        </div>
+        <div id="newArticle">
+          <a href="http://localhost/gs_code/kadai011/post.php">新規記事作成</a>
+        </div>
+        <div id="top">
+          <a href="http://localhost/gs_code/kadai011/select.php">TOP</a>
+        </div>
+        <div id="myPage">
+          <a href="http://localhost/gs_code/kadai011/mypage.php">マイページ</a>
+        </div>
+        <div id="logout">
+          <a href="http://localhost/gs_code/kadai011/logout_act.php"
+            >ログアウト</a
+          >
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
